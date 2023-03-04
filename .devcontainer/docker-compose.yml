@@ -1,0 +1,12 @@
+version: '3'
+services:
+  python:
+    restart: always
+    build: .
+    container_name: "DoNote"
+    working_dir: /home/DoNote
+    tty: true
+    volumes:
+    - type: bind
+      source: ../DoNote
+      target: /home/DoNote
