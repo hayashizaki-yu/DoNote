@@ -34,7 +34,7 @@ if ask_yes_no "Finished?"; then
   echo -n "Enter repository url [SSH]: "
   read REMOTE_REPOSITORY_URL
   if ask_yes_no "Do you want to use repositories already in use?"; then
-    git clone ${REMOTE_REPOSITORY_URL}
+    git clone ${REMOTE_REPOSITORY_URL} /home/DoNote/
   else
     git init
     git remote add origin ${REMOTE_REPOSITORY_URL}
